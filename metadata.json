@@ -1,0 +1,6 @@
+{
+  "name": "Nightfall Arsenal",
+  "description": "A nocturnal PS1-style low-poly 3D arena survival action game where you scavenge enemy weapons to survive endless waves.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

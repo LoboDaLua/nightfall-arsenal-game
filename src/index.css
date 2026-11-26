@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #060811;
+    color: #e6ecf5;
+    font-family: ui-monospace, "Cascadia Mono", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.hud-text-stroke {
+  text-shadow:
+    -2px -2px 0 #05070e,
+    2px -2px 0 #05070e,
+    -2px 2px 0 #05070e,
+    2px 2px 0 #05070e,
+    0 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+.ps1-panel {
+  background-color: rgba(10, 14, 26, 0.88);
+  border: 2px solid #3c4b6e;
+  box-shadow:
+    inset 0 1px 0 rgba(164, 194, 244, 0.18),
+    0 4px 0 #04060d,
+    0 10px 24px rgba(0, 0, 0, 0.65);
+}
+
+.ps1-button {
+  background-color: #19223a;
+  border: 2px solid #6b84b8;
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.16),
+    0 4px 0 #070a14;
+  transition: transform 90ms ease-out, background-color 120ms ease-out, border-color 120ms ease-out;
+}
+
+.ps1-button:hover:not(:disabled) {
+  background-color: #243154;
+  border-color: #9eb8eb;
+}
+
+.ps1-button:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 2px 0 #070a14;
+}
